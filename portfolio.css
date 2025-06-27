@@ -6,22 +6,29 @@
 
 }
 body{
-    background-color:#f2f8ff;
+    background-color:#fffaf4;
     color: #333333;
+    display: block;
+    align-items: center;
+    padding-left: 50px;
+    width: 150px;
+    padding: 10px 9%;
 }
+
 /*-----  header style ----------*/
 header{
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 10%;
-    background-color:#f2f8ffcf ;
+    padding: 10px 9%;
+    background-color:#fffaf4 ;
     display: flex;
-    justify-content: space-between;
+
     align-items: center;
     z-index: 100;
 }
+
 .logo{
    color: #485AD0; 
    font-size: 35px;
@@ -53,7 +60,7 @@ nav{
 }
 .navbar a:hover {
     color: #b49cf0;
-    font-size: 17.5px;
+    font-size: 19.5px;
 }
 /*-----  MAIN style ----------*/
 .home{
@@ -68,6 +75,10 @@ h1 {
     font-size: 63px;
     font-weight: 700;
     line-height: 1.2;
+}
+h2{
+    
+    font-size: 40px;
 }
 h3,#salutation{
     color: #485ad0;
@@ -94,8 +105,8 @@ p {
     justify-content: center;
     align-items: center;
     background: #E4D9FF;
-    width: 155px;
-    height: 100%;
+    width: 165px;
+    height: 55px;
     border: 2px solid #333333;
     border-radius: 8px;
     font-size: 23px;
@@ -122,7 +133,7 @@ p {
 .inspiring {
     margin-right: 10%;
     margin-left: 15%;
-    font-size: large;
+    font-size: 25px;
     letter-spacing: 0.3px;
     text-decoration:wavy ;
     text-transform: capitalize;
@@ -165,7 +176,7 @@ p {
 }
 
 .description  {
-     max-width: 600px; 
+     width: 800px; 
      display: inline; 
      align-content: center;
      padding-left: 30px;
@@ -185,12 +196,7 @@ p {
     display: block;
     align-items: center;
 }
-.body {
-    display: block;
-    align-items: center;
-    padding-left: 50px;
 
-}
 .description pre{
     font-size: 30px;
     font-style: italic;
@@ -202,19 +208,21 @@ p {
 }
 /*------  footer -------*/
 footer{
-   
     height: 50px;
     padding-left: 60px;
 }
-.Contact{
-    height: 60px;
-    justify-content:space-between;
-    align-content: center;
-    padding-left: 60px;
-    height: 70px;
-    width: 90px;
-}
 
+#Contact{
+    border: #333333;
+    background-color: #b49cf0;
+    height: 50px;
+    width: 130px;
+    text-align: center;
+    font-size:x-large;
+    align-items: center;
+    z-index: 100;
+
+}
 .Contact a{
     text-decoration: none;
     align-content: center;
@@ -224,7 +232,6 @@ footer{
 .fa-facebook {
   background: #3B5998;
   color: white;
-
   font: size 60px ;
 }
 .fa-linkedin {
