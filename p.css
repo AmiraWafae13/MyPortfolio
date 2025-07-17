@@ -1,0 +1,339 @@
+/* ========== RESET & ROOT ========== */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+:root {
+  --primary-color: #b49cf0;
+  --second-color: #485ad0;
+  --text-color: #333333;
+  --header-color: #f9bbb2d9;
+  --bgcolor: #fbf2ff;
+  --btn-text: rgb(101, 101, 101);
+  --btn-bg: #cebbff;
+}
+
+body.darkTheme {
+  --bgcolor: #111;
+  --text-color: #fdfcfc;
+  --btn-text: #b49cf0;
+  --btn-bg: black;
+}
+
+/* ========== BASE ========== */
+body {
+  background-color: var(--bgcolor);
+  color: var(--text-color);
+  padding: 10px 9%;
+  cursor: pointer;
+}
+
+/* ========== HEADER ========== */
+header {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 9%;
+  background-color: var(--bgcolor);
+  display: flex;
+  align-items: center;
+  z-index: 100;
+}
+
+.logo {
+  color: var(--second-color);
+  font-size: 30px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: color 0.3;
+  padding-right: 100px;
+}
+.logo:hover {
+  color: var(--primary-color);
+  font-size: 33px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin-left: auto;
+}
+
+.menu {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+.menu a {
+  font-size: 17px;
+  text-decoration: none;
+  font-weight: 500;
+  color: var(--text-color);
+  padding: 10px;
+  transition: color 0.3s ease;
+
+}
+.menu a:hover {
+  color: var(--primary-color);
+  font-size: 15px;
+}
+
+/* ========== MAIN ========== */
+main {
+  width: 100%;
+}
+
+.home,
+.Portfolio-Main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 10%;
+}
+
+/* Typography */
+h1 {
+  color: var(--header-color);
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+h2 {
+  color: var(--header-color);
+  font-size: 28px;
+}
+h3,
+#salutation {
+  color: var(--second-color);
+  font-size: 20px;
+  font-weight: 600;
+  padding: 30px 0 5px;
+}
+mark {
+  background-color: var(--header-color);
+}
+p {
+  font-size: 18px;
+  margin: 20px 0 40px;
+}
+
+.description {
+  max-width: 100%;
+  width: 90%;
+  margin: auto;
+  padding: 30px;
+}
+
+.description p,
+.description li {
+  font-size: 16px;
+  font-style: italic;
+  font-family: serif;
+}
+
+.description ul {
+  font-size: 16px;
+  list-style: none;
+  padding-left: 25px;
+}
+
+/* ========== BUTTONS ========== */
+.btn-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.btn-box a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--btn-bg);
+  padding: 14px 30px;
+  border: 2px solid var(--text-color);
+  border-radius: 8px;
+  font-size: 16px;
+  color: var(--btn-text);
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: 0.3s;
+}
+.btn-box a:nth-child(2) {
+  background-color: #e8deff;
+}
+.btn-box a:hover {
+  background-color: #c5b6e2;
+}
+
+/* ========== ABOUT SECTION ========== */
+.About {
+  margin-top: 100px;
+  padding: 20px;
+  border: solid 1px var(--text-color);
+}
+
+/* ========== QUOTE BOX ========== */
+.inspiring {
+  padding-top: 100px;
+  margin: 0 auto;
+  font-size: 17px;
+  letter-spacing: 0.3px;
+  text-transform: capitalize;
+  max-width: 900px;
+}
+
+#H1_quote {
+  font-size: 38px;
+}
+
+#New {
+  background-color: #d5c6fd;
+  border-radius: 4px;
+  font-size: 17px;
+  display: block;
+  margin: 20px auto;
+  max-width: 140px;
+  height: 34px;
+}
+
+/* ========== PROJECTS ========== */
+.Projects {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(350px, 1fr));
+  gap: 30px;
+  padding: 40px 10%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.project {
+  border: solid #333367 1px;
+  border-radius: 5px;
+  padding: 20px;
+  background-color: white;
+}
+
+.project img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.project a {
+  display: inline-block;
+  background: var(--btn-bg);
+  text-decoration: none;
+  border: 2px solid var(--text-color);
+  color: var(--text-color);
+  font-weight: 600;
+  letter-spacing: 1px;
+  border-radius: 8px;
+  height: 55px;
+  max-width: 167px;
+  padding: 10px 20px;
+  margin-top: 10px;
+}
+
+.ProjectName {
+  font-size: 22px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+.subTitle {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* ========== FOOTER ========== */
+footer {
+  padding: 40px 60px;
+}
+
+.Contact {
+  background-color: var(--btn-bg);
+  padding: 15px;
+  max-width: 130px;
+  text-align: center;
+  font-size: large;
+}
+
+.Contact a {
+  text-decoration: none;
+  display: block;
+  width: 45px;
+  height: 45px;
+  margin: 5px auto;
+}
+
+/* ========== SOCIAL ICON COLORS ========== */
+.fa-facebook {
+  background: #3b5998;
+  color: white;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+.fa-instagram {
+  background: #dd2a7b;
+  color: white;
+}
+
+/* ========== RESPONSIVE DESIGN ========== */
+@media (max-width: 768px) {
+.logo{
+    font-size: 20px;
+}
+  .navbar{
+    font-size: 12px;
+  }
+  .Projects {
+    grid-template-columns: 1fr;
+  }
+
+  p,
+  li {
+    font-size: 18px;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  h3,
+  #salutation {
+    font-size: 24px;
+  }
+
+  .btn-box {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .btn-box a {
+    width: 100%;
+    font-size: 18px;
+  }
+
+  .inspiring {
+    font-size: 17px;
+    padding: 20px;
+  }
+
+  .Portfolio-Main {
+    padding: 5%;
+  }
+}
