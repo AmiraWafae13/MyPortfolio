@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="p.css">
+
+    <title>My Work</title>
+</head>
+
+
+<body class="body">
+    <header  class="portfolio-Header">  
+                <a href="home.html" class="logo">Princessa</a>
+        <nav  aria-label="Main navigation" class="navbar">
+            <ul class="menu">
+                <li><a id="home" href="home.html">home</a></li>
+                <li><a id="Work"  target="_blank" href="portfolio.html">Work</a></li>
+                <li><a id="About" href="AboutMe.html">About</a></li>
+                <li><a id="Contact" href="#contact">Say Hi !</a></li>
+                 <li><button class="themeSwitcher" onclick="toggleTheme()"   >
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M12 21q-3.775 0-6.387-2.613T3 12q0-3.45 2.25-5.988T11 3.05q.325-.05.575.088t.4.362t.163.525t-.188.575q-.425.65-.638 1.375T11.1 7.5q0 2.25 1.575 3.825T16.5 12.9q.775 0 1.538-.225t1.362-.625q.275-.175.563-.162t.512.137q.25.125.388.375t.087.6q-.35 3.45-2.937 5.725T12 21m0-2q2.2 0 3.95-1.213t2.55-3.162q-.5.125-1 .2t-1 .075q-3.075 0-5.238-2.163T9.1 7.5q0-.5.075-1t.2-1q-1.95.8-3.163 2.55T5 12q0 2.9 2.05 4.95T12 19m-.25-6.75"/></svg>
+                     </button></li> 
+            </ul>
+        </nav>  
+
+    </header>
+    <main  class="Portfolio-Main">
+
+
+            <div class="description">
+                        <h1  >My wonderful Portfolio</h1><br> 
+                <h3>you wanna see my work</h3>
+                <p>I mix design and coding with My personal touch to create 
+            a great funny games website,WebApp 
+                            with an artistic vue
+                    </p>
+            </div>
+            
+            <div class="Projects">
+
+                <div class="project" id="Project1">
+                    <h3 class="ProjectName">Handsy Ecommerce</h3>
+                    <img src="C:\Users\pc cam\Desktop\Handsy      soutenance\handsy screenshot web site\homepage.png" alt="handsy">
+                    <a href="">go live</a>
+                  
+
+                </div>
+                <div class="project" id="Project2">
+                    <h3 class="ProjectName">Tic Tac toe Game</h3>
+                    <h6 class="subTitle">A Simple Smart game </h6>
+                    <img src="" alt="tic-tac-toe-Game">
+                    <a href="">go live</a>
+                </div>
+                <div class="project" id="Project4">
+                    <h3 class="ProjectName">temperature Conversion</h3>
+
+                    <img src="" alt="temperature conversion">
+                    <a href="">go live</a>
+                </div> 
+                <div class="project" id="Project3">
+                    <h3 class="ProjectName">Calculator</h3>
+
+                    <img src="" alt="Calculator">
+                    <a href="">go live</a>
+                </div>
+
+            </div>
+
+
+
+    </main>
+    <script>
+      function toggleTheme() {
+    const body = document.body;
+    body.classList.toggle("darkTheme");
+    document.getElementById("themeBtn").textContent = body.classList.contains("dark") ? "☀️" : "🌙";
+  }
+  </script>
+</body>
+</html>
