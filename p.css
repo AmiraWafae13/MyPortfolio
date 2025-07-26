@@ -287,6 +287,10 @@ footer {
   background: #dd2a7b;
   color: white;
 }
+.fa-phone{
+  background-color: black;
+  color: white;
+}
 
 /* ========== RESPONSIVE DESIGN ========== */
 @media (max-width: 768px) {
