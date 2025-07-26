@@ -25,15 +25,18 @@ body.darkTheme {
 
 /* ========== BASE ========== */
 body {
+  min-height: 100vh;
   background-color: var(--bgcolor);
   color: var(--text-color);
-  padding: 10px 9%;
+  /* padding: 10px 9%; */
   cursor: pointer;
+  width: 100%;
+
 }
 
 /* ========== HEADER ========== */
 header {
-  position: relative;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -41,27 +44,17 @@ header {
   background-color: var(--bgcolor);
   display: flex;
   align-items: center;
+  justify-items: center;
   z-index: 100;
 }
 
-.logo {
-  color: var(--second-color);
-  font-size: 30px;
-  font-weight: 700;
-  text-decoration: none;
-  transition: color 0.3;
-  padding-right: 100px;
-}
-.logo:hover {
-  color: var(--primary-color);
-  font-size: 33px;
-}
+
 
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 80%;
+  width: 100%;
   margin-left: auto;
 }
 
@@ -75,7 +68,7 @@ header {
   text-decoration: none;
   font-weight: 500;
   color: var(--text-color);
-  padding: 10px;
+  /* padding: 10px; */
   transition: color 0.3s ease;
 
 }
@@ -83,19 +76,33 @@ header {
   color: var(--primary-color);
   font-size: 15px;
 }
+.logo {
+  color: var(--second-color);
+  font-size: 30px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: color 0.3;
+  padding-right: 6em;
+}
+.logo:hover {
+  color: var(--primary-color);
+  font-size: 33px;
+}
 
 /* ========== MAIN ========== */
 main {
+  padding-top: 2em;
   width: 100%;
 }
 
 .home,
 .Portfolio-Main {
   min-height: 100vh;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0 10%;
+  /* padding: 0 10%; */
 }
 
 /* Typography */
@@ -148,6 +155,7 @@ p {
 .btn-box {
   display: flex;
   flex-wrap: wrap;
+
   gap: 15px;
   margin-top: 20px;
 }
@@ -156,6 +164,7 @@ p {
   display: inline-flex;
   justify-content: center;
   align-items: center;
+  width: 50%;
   background: var(--btn-bg);
   padding: 14px 30px;
   border: 2px solid var(--text-color);
@@ -262,6 +271,7 @@ footer {
   background-color: var(--btn-bg);
   padding: 15px;
   max-width: 130px;
+  /* width: 60%; */
   text-align: center;
   font-size: large;
 }
@@ -272,6 +282,8 @@ footer {
   width: 45px;
   height: 45px;
   margin: 5px auto;
+  /* align-items: center; */
+  text-align: center;
 }
 
 /* ========== SOCIAL ICON COLORS ========== */
@@ -287,8 +299,8 @@ footer {
   background: #dd2a7b;
   color: white;
 }
-.fa-phone{
-  background-color: black;
+.fa-whatsapp{
+  background-color:  #075e54;
   color: white;
 }
 
@@ -296,6 +308,7 @@ footer {
 @media (max-width: 768px) {
 .logo{
     font-size: 20px;
+    padding-right: 40px;
 }
   .navbar{
     font-size: 12px;
