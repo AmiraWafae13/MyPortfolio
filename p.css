@@ -28,7 +28,7 @@ body {
   min-height: 100vh;
   background-color: var(--bgcolor);
   color: var(--text-color);
-  /* padding: 10px 9%; */
+  padding-top: 10px 15%;
   cursor: pointer;
   width: 100%;
 
@@ -40,7 +40,8 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 10px 9%;
+  margin: auto;
+  padding: 10px 15%;
   background-color: var(--bgcolor);
   display: flex;
   align-items: center;
@@ -176,7 +177,7 @@ p {
   max-width: 100%;
   width: 90%;
   margin: auto;
-  padding: 30px;
+  padding: 10px 15%;
 }
 
 .description p,
@@ -230,6 +231,18 @@ p {
   padding: 20px;
   border: solid 1px var(--text-color);
 }
+/* ========== SKIILS ========== */
+#MySkills{
+  list-style: none;
+  padding: 0;
+}
+#MySkills li{
+  font-size: 20px;
+  margin: 10px 0;
+  display: flex;
+  gap: 10px;
+
+}
 
 /* ========== QUOTE BOX ========== */
 .inspiring {
@@ -242,6 +255,7 @@ p {
   align-items: center;
   justify-items: center;
 }
+
 
 #H1_quote {
   font-size: 38px;
@@ -307,12 +321,13 @@ p {
 
 /* ========== FOOTER ========== */
 footer {
-  padding: 40px 60px;
+  padding: 40px 15%;
 }
 
 .Contact {
   background-color: var(--btn-bg);
-  padding: 15px;
+  padding: 15px ;
+
   max-width: 130px;
   /* width: 60%; */
   text-align: center;
@@ -327,6 +342,8 @@ footer {
   margin: 5px auto;
   /* align-items: center; */
   text-align: center;
+  align-items: center;
+  justify-content: center;
 }
 
 /* ========== SOCIAL ICON COLORS ========== */

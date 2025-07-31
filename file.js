@@ -28,7 +28,13 @@ document.querySelector(".humberger-menu").setAttribute("aria-expanded",expanded)
 
 
 
-let Skills = [ "HTML","CSS","JS","figma-design","Adobe Illustrator"];
+const Skills = [
+  '<i class="fab fa-html5"></i> HTML',
+  '<i class="fab fa-css3-alt"></i> CSS',
+  '<i class="fab fa-js"></i> JavaScript',
+  '<i class="fab fa-figma"></i> Figma'
+];
+
     const Mydiv= document.getElementById("MySkills");
 
     // Mydiv.CreateElement = "<ul> MySkills </ul>";
