@@ -50,7 +50,7 @@ header {
 
 
 
-.navbar {
+.Main-navigation {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -63,6 +63,7 @@ header {
   gap: 1rem;
   list-style: none;
 }
+
 .menu a {
   font-size: 17px;
   text-decoration: none;
@@ -83,10 +84,50 @@ header {
   text-decoration: none;
   transition: color 0.3;
   padding-right: 6em;
+  margin-right: auto;
 }
 .logo:hover {
   color: var(--primary-color);
   font-size: 33px;
+}
+.Mobile_menu{
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  position: absolute;
+  gap: 1rem;
+  background-color: #fbf2ff;
+  top: 30px;
+  right: 0 ;
+  left: 22rem;
+  width: 100%;
+  padding: 1rem; 
+  /* border: 1px solid var(--text-color); */
+  z-index: 99;
+  list-style: none;
+
+
+}
+.Mobile_menu a{
+  text-decoration: none;
+
+  color: rgb(73, 73, 73);
+  display: block;
+  width: 100%;
+  transition: background-color 0.3s ease;
+
+}
+.Mobile_menu a:hover {
+  background-color: var(--header-color);
+  counter-reset: var(--text-color);
+  border-radius: 5px;
+
+}
+.show{
+  display: flex;
+}
+.humberger-menu{
+  display: none;
 }
 
 /* ========== MAIN ========== */
@@ -194,10 +235,12 @@ p {
 .inspiring {
   padding-top: 100px;
   margin: 0 auto;
-  font-size: 17px;
+  font-size: 16px;
   letter-spacing: 0.3px;
   text-transform: capitalize;
-  max-width: 900px;
+  max-width: 700px;
+  align-items: center;
+  justify-items: center;
 }
 
 #H1_quote {
@@ -303,6 +346,11 @@ footer {
   background-color:  #075e54;
   color: white;
 }
+.mail{
+  background-color: black;
+  color: white;
+
+}
 
 /* ========== RESPONSIVE DESIGN ========== */
 @media (max-width: 768px) {
@@ -310,8 +358,23 @@ footer {
     font-size: 20px;
     padding-right: 40px;
 }
-  .navbar{
+  .Main-navigation{
+    
     font-size: 12px;
+    margin-left: auto;
+  }
+  .humberger-menu{
+    display: block;
+    visibility: visible;
+    font-size: 24px;
+    color: var(--second-color);
+    
+    /* justify-self: last baseline; */
+    margin: auto;
+    
+  }
+  .menu {
+    display: none;
   }
   .Projects {
     grid-template-columns: 1fr;
@@ -354,3 +417,4 @@ footer {
     padding: 5%;
   }
 }
+

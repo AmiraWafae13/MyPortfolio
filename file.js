@@ -20,3 +20,23 @@ if(n>=QuotesNBR){
 }
 
 
+let menu = document.querySelector(".Mobile_menu");
+function change(){
+menu.classList.toggle("show");
+document.querySelector(".humberger-menu").setAttribute("aria-expanded",expanded);
+}
+
+
+
+let Skills = [ "HTML","CSS","JS","figma-design","Adobe Illustrator"];
+    const Mydiv= document.getElementById("MySkills");
+
+    // Mydiv.CreateElement = "<ul> MySkills </ul>";
+    Mydiv.insertAdjacentHTML("beforeend","<ul id='skillsList' > <h2> My Skills </h2> </ul>");
+for (let i = 0; i < Skills.length; i++) {
+
+        document.getElementById("skillsList").
+        insertAdjacentHTML("beforeend","<li>"+Skills[i] +"</li>");
+    
+}
+
